@@ -10,8 +10,8 @@ exports[`renders correctly 1`] = `
     }
   }
 >
-  <Text>
-    Humon
-  </Text>
+  <View
+    testID="mapView"
+  />
 </RCTSafeAreaView>
 `;
