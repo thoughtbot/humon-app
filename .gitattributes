@@ -1,0 +1,3 @@
+*.snap linguist-generated
+yarn.lock linguist-generated
+ios/Podfile.lock linguist-generated
