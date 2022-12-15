@@ -1,10 +1,11 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import MapView from 'react-native-maps';
+import {SafeAreaView, StyleSheet} from 'react-native';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Humon</Text>
+      <MapView testID="mapView" style={styles.mapContainer} />
     </SafeAreaView>
   );
 };
@@ -14,6 +15,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  mapContainer: {
+    width: '100%',
+    height: '100%',
   },
 });
 
