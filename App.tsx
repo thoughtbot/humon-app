@@ -1,12 +1,15 @@
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 import MapView from 'react-native-maps';
 import {SafeAreaView, StyleSheet} from 'react-native';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <MapView testID="mapView" style={styles.mapContainer} />
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.container}>
+        <MapView testID="mapView" style={styles.mapContainer} />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
