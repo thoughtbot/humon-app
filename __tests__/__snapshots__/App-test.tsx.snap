@@ -53,6 +53,7 @@ exports[`renders correctly 1`] = `
     >
       <RNSScreenStackHeaderConfig
         backButtonInCustomView={false}
+        backTitle="Back"
         backgroundColor="rgb(0, 179, 153)"
         color="#fff"
         direction="ltr"
@@ -65,7 +66,51 @@ exports[`renders correctly 1`] = `
         titleFontWeight="bold"
         topInsetEnabled={false}
         translucent={false}
-      />
+      >
+        <RNSScreenStackHeaderSubview
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+          type="left"
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontSize": 25,
+                  "fontWeight": "800",
+                }
+              }
+            >
+              +
+            </Text>
+          </View>
+        </RNSScreenStackHeaderSubview>
+      </RNSScreenStackHeaderConfig>
       <View
         accessibilityElementsHidden={false}
         importantForAccessibility="auto"
